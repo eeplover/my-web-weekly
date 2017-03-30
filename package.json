@@ -1,0 +1,25 @@
+{
+  "name": "web-weekly",
+  "version": "1.0.0",
+  "description": "前端最新资讯",
+  "main": "crawler.js",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "juice": "^4.0.2",
+    "nodemailer": "^3.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eplover/my-simple-crawler.git"
+  },
+  "author": "ePlover",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eplover/my-simple-crawler/issues"
+  },
+  "homepage": "https://github.com/eplover/my-simple-crawler#readme"
+}
