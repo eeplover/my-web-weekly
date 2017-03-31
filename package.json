@@ -1,8 +1,11 @@
 {
-  "name": "web-weekly",
+  "name": "my-web-weekly",
   "version": "1.0.0",
   "description": "前端最新资讯",
-  "main": "crawler.js",
+  "author": "ePlover <eeplover@gmail.com>",
+  "scripts": {
+    "start": "node crawler.js"
+  },
   "dependencies": {
     "cheerio": "^0.22.0",
     "ejs": "^2.5.6",
@@ -11,18 +14,9 @@
     "nodemailer": "^3.1.8",
     "stylus": "^0.51.1"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eplover/my-simple-crawler.git"
+    "url": "git+https://github.com/eplover/my-web-weekly.git"
   },
-  "author": "ePlover",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eplover/my-simple-crawler/issues"
-  },
-  "homepage": "https://github.com/eplover/my-simple-crawler#readme"
+  "license": "ISC"
 }
