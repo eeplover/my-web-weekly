@@ -1,0 +1,59 @@
+/* General Style */
+body
+  background-color white
+a
+  color #0081b5 !important
+
+#other,
+#fe_focus,
+#node_weekly,
+#github_trending,
+#javascript_weekly
+  thead
+    th
+      padding 6px 12px
+      font-size 23px
+  tbody
+    td
+      padding 16px 12px 12px 12px
+    td > a
+      font-size 18px
+    p
+      margin 0
+      color #586069
+      & > a
+        font-size 14px
+
+/* Github Trending Js-Top-5 Style */
+#github_trending
+  thead
+    color white
+    background-color #24292e
+  tbody
+    p
+      svg
+        vertical-align sub
+
+/* JavaScript Weekly */
+#javascript_weekly
+  thead
+    color #323330
+    background-color #f7df1e
+
+/* FrontEnd Focus */
+#fe_focus
+  thead
+    color white
+    background-color #9d3979
+
+/* Node Weekly */
+#node_weekly
+  thead
+    color white
+    background-color #6ca629
+
+/* Other */
+#other
+  thead
+    color #323330
+    background-color #ac988e

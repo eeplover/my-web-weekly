@@ -1,0 +1,121 @@
+<table border="0" width="100%" cellpadding="0">
+
+  <!-- Github Trending Js-Top-5 Template -->
+  <% let gd = github_trending; %>
+  <% if (gd) { %>
+  <tr>
+    <td align="center">
+      <table id="<%= gd.id %>" border="0" width="600" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th align="left"><%= gd.tag %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <% gd.list.forEach(item => { %>
+              <a href="<%= item.link %>"><%= item.title %></a>
+              <p><%- item.desc %></p>
+              <p><%- item.stars %></p>
+              <br clear="all" style="clear: both">
+              <% }) %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <% } %>
+
+  <!-- FrontEnd Focus -->
+  <% let ff = fe_focus; %>
+  <% if (ff) { %>
+  <tr>
+    <td align="center">
+      <table id="<%= ff.id %>" border="0" width="600" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th align="left"><%= ff.tag %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%- ff.list %>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <% } %>
+
+  <!-- JavaScript Weekly -->
+  <% let jw = javascript_weekly; %>
+  <% if (jw) { %>
+  <tr>
+    <td align="center">
+      <table id="<%= jw.id %>" border="0" width="600" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th align="left"><%= jw.tag %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%- jw.list %>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <% } %>
+
+  <!-- Node Weekly -->
+  <% let nw = node_weekly; %>
+  <% if (nw) { %>
+  <tr>
+    <td align="center">
+      <table id="<%= nw.id %>" border="0" width="600" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th align="left"><%= nw.tag %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%- nw.list %>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <% } %>
+
+  <!-- Other -->
+  <tr>
+    <td align="center">
+      <table id="other" border="0" width="600" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th align="left">Other</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="http://css-weekly.com/archives/">CSS Weekly</a>
+              <br clear="all" style="clear: both">
+              <a href="https://mobilewebweekly.com/">Mobile Web Weekly</a>
+              <br clear="all" style="clear: both">
+              <a href="http://webopsweekly.com/latest">Web Operations Weekly</a>
+              <br clear="all" style="clear: both">
+              <a href="https://web-design-weekly.com/archive/">Web Design Weekly</a>
+              <br clear="all" style="clear: both">
+              <a href="http://www.echojs.com/">Echo Js</a>
+              <br clear="all" style="clear: both">
+              <a href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+              <br clear="all" style="clear: both">
+              <a href="https://www.chromestatus.com/features">Chromium Status</a>
+              <br clear="all" style="clear: both">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+
+</table>
