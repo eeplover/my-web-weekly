@@ -5,10 +5,10 @@ a
   color #0081b5 !important
 
 #other,
-#fe_focus,
-#node_weekly,
-#github_trending,
-#javascript_weekly
+#front-end-focus,
+#node-weekly,
+#github-trending,
+#js-weekly
   thead
     color white
     th
@@ -26,7 +26,7 @@ a
         font-size 14px
 
 /* Github Trending Js-Top-5 Style */
-#github_trending
+#github-trending
   thead
     background-color #24292e
   tbody
@@ -35,18 +35,18 @@ a
         vertical-align sub
 
 /* JavaScript Weekly */
-#javascript_weekly
+#js-weekly
   thead
     color #323330
     background-color #f7df1e
 
 /* FrontEnd Focus */
-#fe_focus
+#front-end-focus
   thead
     background-color #9d3979
 
 /* Node Weekly */
-#node_weekly
+#node-weekly
   thead
     background-color #6ca629
 

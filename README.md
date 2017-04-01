@@ -4,8 +4,7 @@
 
 基于NodeJs的一段爬虫程序，用于收集最新前端资讯。
 
-
-![screencapture-file-users-eplover-note-my-web-weekly-email-2017-4-1-html-1491017146395](https://cloud.githubusercontent.com/assets/11499979/24575148/83dc45b2-16d0-11e7-8ed9-c5d6c336d146.png)
+![Web Weekly邮件内容截图](https://cloud.githubusercontent.com/assets/11499979/24580179/38a2daa0-1736-11e7-9a21-2a2baa82d221.png)
 
 ### 功能
 
@@ -21,12 +20,12 @@
 
 ```json
 {
-  "user": "your-email",
-  "pass": "password-of-your-email",
-  "sender": "sender's-email",
-  "receivers": "receiver's-email"
+  "user": "user.name@gmail.com",
+  "pass": "xxx",
+  "sender": "sender.name",
+  "receivers": "receiver.name@gmail.com"
 }
 
 ```
-* 在 config.js 里头设置需要扒取的页面，与数据过滤方法（filter）
+
 * 在 src/templates 下新增邮件模板和相应样式
