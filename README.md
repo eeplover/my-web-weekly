@@ -4,7 +4,7 @@
 
 基于NodeJs的一段爬虫程序，用于收集最新前端资讯。
 
-![web weekly 邮件内内容截图](https://cloud.githubusercontent.com/assets/11499979/24581025/0aa20648-1746-11e7-9fc9-4f2d8b711abc.png)
+![web weekly 邮件内内容截图](https://cloud.githubusercontent.com/assets/11499979/24580263/a3f5e65c-1737-11e7-899c-41e8b1eaedb0.png)
 
 
 ### 功能
