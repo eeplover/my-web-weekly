@@ -38,7 +38,7 @@ Promise.all(CONFIG.targets.map(item => createAReqPromise(item)))
       renderData[target.id] = target.filter(item)
     })
     fs.writeFile(`src/models/${CONFIG.date}.json`, JSON.stringify(renderData), err => {
-      err ? console.error(err) : console.log(`The data was write to src/models/${CONFIG.date}.json`)
+      err ? console.error(err) : console.log(`Save data as src/models/${CONFIG.date}.json`)
     })
     // 渲染数据并返回结果
     return eT.render(renderData)
@@ -55,7 +55,7 @@ Promise.all(CONFIG.targets.map(item => createAReqPromise(item)))
     })
 
     fs.writeFile(`email/${CONFIG.date}.html`, result.html, err => {
-      err ? console.error(err) : console.log(`The data was write to email/${CONFIG.date}.html`)
+      err ? console.error(err) : console.log(`Save render result as email/${CONFIG.date}.html`)
     })
     // fs.writeFile(`email/${CONFIG.date}.txt`, result.txt, err => {
     //   err ? console.error(err) : console.log(`The data was write to email/${CONFIG.date}.txt`)
