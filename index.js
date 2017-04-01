@@ -4,13 +4,14 @@ const Spider = require('./spider')
 const pigeon = require('./pigeon')
 const cheerio = require('cheerio')
 const EmailTemplate = require('email-templates').EmailTemplate
-
 const spider001 = new Spider(),
   now = new Date(),
   date = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`,
   templateDir = path.join(__dirname, 'src/templates'),
-  eT = new EmailTemplate(templateDir),
-  opts = [
+  eT = new EmailTemplate(templateDir)
+
+// 配置待抓取页面链接及相应的数据处理方法
+let opts = [
     {
       url: 'http://nodeweekly.com/latest',
       digest: digest2
@@ -52,6 +53,7 @@ function digest2(raw) {
   $trs.eq(2).remove()
   return $trs.eq(1).toString()
 }
+
 
 console.log('Go!! my super spider ...')
 console.time('Spider spend')
