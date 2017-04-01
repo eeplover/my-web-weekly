@@ -19,10 +19,10 @@
 
 ```json
 {
-  "user": "user-name@gmail.com",
+  "user": "your-email",
   "pass": "password-of-your-email",
-  "sender": "sender's email",
-  "receivers": "receiver's email"
+  "sender": "sender's-email",
+  "receivers": "receiver's-email"
 }
 
 ```
