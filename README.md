@@ -5,6 +5,8 @@
 基于NodeJs的一段爬虫程序，用于收集最新前端资讯。
 
 
+![screencapture-file-users-eplover-note-my-web-weekly-email-2017-4-1-html-1491017146395](https://cloud.githubusercontent.com/assets/11499979/24575148/83dc45b2-16d0-11e7-8ed9-c5d6c336d146.png)
+
 ### 功能
 
 * 实时抓取 Weekly 页面数据。
