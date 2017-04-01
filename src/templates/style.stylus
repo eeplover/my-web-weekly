@@ -10,6 +10,7 @@ a
 #github_trending,
 #javascript_weekly
   thead
+    color white
     th
       padding 6px 12px
       font-size 23px
@@ -27,7 +28,6 @@ a
 /* Github Trending Js-Top-5 Style */
 #github_trending
   thead
-    color white
     background-color #24292e
   tbody
     p
@@ -43,17 +43,14 @@ a
 /* FrontEnd Focus */
 #fe_focus
   thead
-    color white
     background-color #9d3979
 
 /* Node Weekly */
 #node_weekly
   thead
-    color white
     background-color #6ca629
 
 /* Other */
 #other
   thead
-    color #323330
     background-color #ac988e

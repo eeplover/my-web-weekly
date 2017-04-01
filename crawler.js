@@ -26,7 +26,7 @@ const CONFIG = require('./config'),
   templateDir = path.join(__dirname, 'src/templates'),
   eT = new EmailTemplate(templateDir)
 
-console.log('Crawler start ...');
+console.log('Crawler start ...')
 console.time('Request Cost')
 Promise.all(CONFIG.targets.map(item => createAReqPromise(item)))
   .then(dataList => {
@@ -67,7 +67,6 @@ function createAReqPromise(target = {}) {
   return new Promise((resolve, reject) => {
     const serve = target.url.indexOf('https') !== -1 ? https : http
 
-    // @TODO 规避重定向页面
     serve.get(target.url, res => {
       let chunks = ''
       res.on('data', chunk => {
